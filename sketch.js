@@ -22,12 +22,12 @@ function setup() {
   angleMode(DEGREES);
 
   //criar corpo da base do jogador
-  playerBase = Bodies.retangle(200, 350, 180, 150, options);
-  World.add(world,player)
+  playerBase = Bodies.rectangle(200, 350, 180, 150, options);
+  World.add(world,playerBase)
 
 
   //criar corpo do jogador
-  player = Bodies.retangle(250, playerBase.position.y, 160, 50, 180, options);
+  player = Bodies.rectangle(250, playerBase.position.y, 160, 50, 180, options);
   World.add(world,player)
 }
 
